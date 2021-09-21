@@ -18,7 +18,7 @@ pipeline {
      
                 stage ('maven build'){
                   steps {
-                      sh './gradlew clean build'
+                      sh './gradlew clean build deploy'
 		                  sh 'cp /var/lib/jenkins/workspace/Gradle_pipeline1/target/*.war .'
 				        }
 				      }
